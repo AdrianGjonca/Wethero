@@ -1,0 +1,40 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Wethero</span>
+    <span class="spacer"></span>
+    <span class="time">{{ TimeMessage }}</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<span class="underbox">Showing weather for London,UK</span>
+<mat-divider></mat-divider>
+
+<mat-tab-group>
+  <mat-tab label="Today">
+
+    <div *ngFor="let weth of weather">
+      <mat-card class="example-card">
+        <mat-card-content>
+          <p>
+            {{ weth.hour }}:{{ weth.min }}
+            rain:{{weth.percip}}%
+            clouds:{{ weth.clouds }}%
+            temperature:{{ weth.temp }}*C
+          </p>
+        </mat-card-content>
+      </mat-card>
+      <mat-divider></mat-divider>
+    </div>
+
+  </mat-tab>
+  <mat-tab label="Tommorow">
+    <h1>Some more tab content</h1>
+    <p>...</p>
+  </mat-tab>
+  <mat-tab label="Next 5 days">
+    <h1>Some more tab content</h1>
+    <p>...</p>
+  </mat-tab>
+</mat-tab-group>
+
+<mat-divider></mat-divider>

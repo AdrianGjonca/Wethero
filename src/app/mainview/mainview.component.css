@@ -1,0 +1,14 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+
+.time {
+    font-size: medium;
+    font-weight: normal;
+}
+
+.underbox {
+    font-size: medium;
+    font-weight: normal;
+    color: grey;
+}
